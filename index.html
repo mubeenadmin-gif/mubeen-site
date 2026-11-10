@@ -1,4 +1,5 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}.talk-ch li[data-t]{cursor:pointer;border-radius:6px;transition:background .15s}.talk-ch li[data-t]:hover,.talk-ch li[data-t]:focus-visible{background:rgba(201,143,46,.12);outline:none}
+</style></head><body>
 <title>Mubeen Arabic Institute</title>
 <meta name="description" content="Classical Arabic for homeschooled students aged 7+, taught online by madrasa-trained teachers in small pods, three sessions a week. Free trial sessions.">
 <link rel="canonical" href="https://mubeenarabic.org/">
@@ -634,15 +635,15 @@ footer .khatm{font-family:var(--f-nast);direction:rtl;font-size:1.4rem;color:var
       <div class="talk">
       <div class="talk-player" id="talkPlayer">
         <button class="talk-poster" id="talkPlay" type="button" aria-label="Play the talk: The classical children’s kuttab">
-          <span class="tp-txt"><small>Community webinar · 23 August 2026</small><b>The Origin and Evolution of Kuttabs</b><em>Sh. Mumin Hussein · 72 min</em></span>
+          <span class="tp-txt"><small>Community webinar · 23 August 2026</small><b>The Origin and Evolution of Kuttabs</b><em>Sh. Mumin Hussein · 59 min</em></span>
           <span class="tp-img" style="background-image:url(img/talk-kuttab.webp)"></span>
           <span class="tp-btn" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
         </button>
       </div>
       <div class="talk-side">
         <h3>Inside the talk</h3>
-        <ol class="talk-ch"><li><span>0:00</span>Opening</li><li><span>3:15</span>About Our Islamic Homeschool</li><li><span>5:15</span>Overview and introduction</li><li><span>9:30</span>The origin and evolution of kuttabs</li><li><span>11:00</span>Defining the kuttab</li><li><span>21:15</span>Voices from the first century AH</li><li><span>23:45</span>From service to profession</li><li><span>26:00</span>Beyond Qur’an memorisation</li><li><span>37:00</span>Insights from early fatwas</li><li><span>42:00</span>Core and optional subjects</li><li><span>45:45</span>A disciplined day</li><li><span>48:15</span>Why outside the mosque?</li><li><span>51:30</span>A mature and lasting model</li><li><span>53:45</span>Questions and answers</li></ol>
-        <a class="talk-open" href="https://drive.google.com/file/d/11hZmCXrUY7aIHR6WVYJY-BB-54OfzeUc/view" target="_blank" rel="noopener">Open in Google Drive ↗</a>
+        <ol class="talk-ch"><li data-t="0" tabindex="0" role="button"><span>0:00</span>Opening</li><li data-t="6" tabindex="0" role="button"><span>0:06</span>Introduction by Kevin Marshall</li><li data-t="227" tabindex="0" role="button"><span>3:47</span>Sh. Mumin Hussein: why the kuttab</li><li data-t="291" tabindex="0" role="button"><span>4:51</span>The origin and evolution of kuttabs</li><li data-t="386" tabindex="0" role="button"><span>6:26</span>Defining the kuttab</li><li data-t="986" tabindex="0" role="button"><span>16:26</span>Voices from the first century AH</li><li data-t="1139" tabindex="0" role="button"><span>18:59</span>From service to profession</li><li data-t="1356" tabindex="0" role="button"><span>22:36</span>Beyond Qur’an memorisation</li><li data-t="1943" tabindex="0" role="button"><span>32:23</span>Insights from early fatwas</li><li data-t="2232" tabindex="0" role="button"><span>37:12</span>Core and optional subjects</li><li data-t="2464" tabindex="0" role="button"><span>41:04</span>A disciplined day</li><li data-t="2608" tabindex="0" role="button"><span>43:28</span>Why outside the mosque?</li><li data-t="2809" tabindex="0" role="button"><span>46:49</span>A mature and lasting model</li><li data-t="2965" tabindex="0" role="button"><span>49:25</span>Questions and answers</li></ol>
+        <a class="talk-open" href="https://youtu.be/HjIk2v-GvmI" target="_blank" rel="noopener">Watch on YouTube ↗</a>
       </div>
     </div>
     </div>
@@ -1145,7 +1146,9 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&box.classList.conta
   libTabs.forEach((b,i)=>{b.addEventListener('click',()=>libSel(b));b.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){const n=libTabs[(i+(e.key==='ArrowRight'?1:libTabs.length-1))%libTabs.length];libSel(n);n.focus()}})});
 
   /* ---------- talk player ---------- */
-  const tp=$('talkPlay');if(tp)tp.addEventListener('click',()=>{const f=document.createElement('iframe');f.src='https://drive.google.com/file/d/11hZmCXrUY7aIHR6WVYJY-BB-54OfzeUc/preview';f.allow='autoplay; fullscreen';f.allowFullscreen=true;f.title='The classical children’s kuttab, Sh. Mumin Hussein';$('talkPlayer').replaceChildren(f)});
+  const playTalk=t=>{const f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/HjIk2v-GvmI?autoplay=1&rel=0'+(t?'&start='+t:'');f.allow='autoplay; fullscreen; encrypted-media; picture-in-picture';f.allowFullscreen=true;f.title='The classical children’s kuttab, Sh. Mumin Hussein';$('talkPlayer').replaceChildren(f);$('talkPlayer').scrollIntoView({behavior:'smooth',block:'center'})};
+  const tp=$('talkPlay');if(tp)tp.addEventListener('click',()=>playTalk(0));
+  document.querySelectorAll('.talk-ch li[data-t]').forEach(li=>{const go=()=>playTalk(+li.dataset.t);li.addEventListener('click',go);li.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}})});
 
   /* ---------- WhatsApp label peek ---------- */
   if(!matchMedia('(prefers-reduced-motion: reduce)').matches){const wa=$('wa');setTimeout(()=>{wa.classList.add('peek');setTimeout(()=>wa.classList.remove('peek'),3500)},2500)}
